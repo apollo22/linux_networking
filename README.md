@@ -9,6 +9,9 @@
 
   ### Unsorted
   - arp
+  - ifcfg
+  - ifup
+  - ifown
 
 ## NetworkManager
 - conf files
@@ -29,11 +32,16 @@
   - /etc/sysconfig/network-scripts
 	
 ## netctl (being replaced by systemd-networkd)
-- wifi-menu 
+- conf files
+  - /etc/netctl/
+- CLI
+- TLI
+  - wifi-menu (nice to use during first connection on arch)
 		
 ## Unsorted
   - Netplan
   - 802.1X 
+  - /etc/hosts
   
 - WPA Supplicant
   - wpa-cli
