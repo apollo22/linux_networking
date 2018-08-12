@@ -1,8 +1,16 @@
 # Linux Networking
-  - 'ip' --> not persistant
-  - 'ifconfig' --> Replaced by 'ip'
+## Non persistant tools
+  ### Current
+  - ip
+  - iw
+  ### Deprecated
+  - ifconfig
+  - iwconfig
 
-NetworkManager
+  ### Unsorted
+  - arp
+
+## NetworkManager
 - conf files
   - /etc/NetworkManager/NetworkManager.conf
   - /etc/network/interfaces
@@ -16,24 +24,28 @@ NetworkManager
   - network-admin
   - nm-applet
 
-systemd-networkd
+## systemd-networkd
 - conf files
   - /etc/sysconfig/network-scripts
+	
+## netctl (being replaced by systemd-networkd)
+- wifi-menu 
 		
-		
-Unsorted
+## Unsorted
   - Netplan
-  - netctl
-  - wifi-menu
-  - iwconfig
   - 802.1X 
+  
+- WPA Supplicant
+  - wpa-cli
+  - wpa_cli_selinux
+  - wpa_gui
   
 - DNS
   - /etc/resolv.conf
   - systemd-resolve
   
 - DHCP
-  
+  - dpcpd
 - Bounding / Link Aggregation 
   - LACP
   
